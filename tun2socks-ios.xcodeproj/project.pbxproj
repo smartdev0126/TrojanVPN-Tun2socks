@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027388C8299EEAC500B13E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027388C7299EEAC500B13E9D /* AppDelegate.swift */; };
+		027388CA299EEAC500B13E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027388C9299EEAC500B13E9D /* SceneDelegate.swift */; };
+		027388CF299EEAC500B13E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027388CD299EEAC500B13E9D /* Main.storyboard */; };
+		027388D1299EEAC600B13E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027388D0299EEAC600B13E9D /* Assets.xcassets */; };
+		027388D4299EEAC600B13E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027388D2299EEAC600B13E9D /* LaunchScreen.storyboard */; };
+		027388E9299EEBD600B13E9D /* ProxyConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 027388E8299EEBD600B13E9D /* ProxyConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		027388EC299EEBD600B13E9D /* ProxyConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027388E6299EEBD600B13E9D /* ProxyConfig.framework */; };
+		027388ED299EEBD600B13E9D /* ProxyConfig.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 027388E6299EEBD600B13E9D /* ProxyConfig.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		027388F9299EEC2000B13E9D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027388F8299EEC2000B13E9D /* NetworkExtension.framework */; };
+		027388FC299EEC2000B13E9D /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027388FB299EEC2000B13E9D /* PacketTunnelProvider.swift */; };
+		02738901299EEC2000B13E9D /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 027388F6299EEC2000B13E9D /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02738907299EEC4100B13E9D /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 02738906299EEC4100B13E9D /* CocoaAsyncSocket */; };
+		02738909299EEC4400B13E9D /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02738908299EEC4400B13E9D /* CryptoSwift */; };
+		0273890B299EEDB700B13E9D /* ProxyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273890A299EEDB700B13E9D /* ProxyConfig.swift */; };
+		02738910299EEE1700B13E9D /* TrojanProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273890E299EEE1700B13E9D /* TrojanProxy.swift */; };
+		02738912299EEEB100B13E9D /* libtun2socks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02738911299EEEA700B13E9D /* libtun2socks.a */; };
+		02738916299EEF2700B13E9D /* libtun2socks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02738914299EEF2700B13E9D /* libtun2socks.a */; };
+		0273891A299EF1B600B13E9D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02738918299EF1B600B13E9D /* TableViewController.swift */; };
+		0273891B299EF1B600B13E9D /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02738919299EF1B600B13E9D /* VPNManager.swift */; };
+		03505FBB299F5552003D5C48 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027388F8299EEC2000B13E9D /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		027388EA299EEBD600B13E9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 027388BC299EEAC500B13E9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027388E5299EEBD600B13E9D;
+			remoteInfo = ProxyConfig;
+		};
+		027388FF299EEC2000B13E9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 027388BC299EEAC500B13E9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027388F5299EEC2000B13E9D;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		027388F1299EEBD600B13E9D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				027388ED299EEBD600B13E9D /* ProxyConfig.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02738905299EEC2000B13E9D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02738901299EEC2000B13E9D /* PacketTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		027388C4299EEAC500B13E9D /* tun2socks-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tun2socks-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		027388C7299EEAC500B13E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		027388C9299EEAC500B13E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		027388CE299EEAC500B13E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		027388D0299EEAC600B13E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		027388D3299EEAC600B13E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		027388D5299EEAC600B13E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027388E6299EEBD600B13E9D /* ProxyConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProxyConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		027388E8299EEBD600B13E9D /* ProxyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyConfig.h; sourceTree = "<group>"; };
+		027388F6299EEC2000B13E9D /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		027388F8299EEC2000B13E9D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		027388FB299EEC2000B13E9D /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		027388FD299EEC2000B13E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		027388FE299EEC2000B13E9D /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		0273890A299EEDB700B13E9D /* ProxyConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyConfig.swift; sourceTree = "<group>"; };
+		0273890C299EEE1700B13E9D /* Tun2socks-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tun2socks-Bridging-Header.h"; sourceTree = "<group>"; };
+		0273890E299EEE1700B13E9D /* TrojanProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrojanProxy.swift; sourceTree = "<group>"; };
+		02738911299EEEA700B13E9D /* libtun2socks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtun2socks.a; path = PacketTunnel/libtun2socks/libtun2socks.a; sourceTree = "<group>"; };
+		02738914299EEF2700B13E9D /* libtun2socks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtun2socks.a; sourceTree = "<group>"; };
+		02738915299EEF2700B13E9D /* tun2socks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tun2socks.h; sourceTree = "<group>"; };
+		02738917299EF0EF00B13E9D /* tun2socks-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tun2socks-ios.entitlements"; sourceTree = "<group>"; };
+		02738918299EF1B600B13E9D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		02738919299EF1B600B13E9D /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		027388C1299EEAC500B13E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027388EC299EEBD600B13E9D /* ProxyConfig.framework in Frameworks */,
+				03505FBB299F5552003D5C48 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027388E3299EEBD600B13E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027388F3299EEC2000B13E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02738912299EEEB100B13E9D /* libtun2socks.a in Frameworks */,
+				02738907299EEC4100B13E9D /* CocoaAsyncSocket in Frameworks */,
+				02738916299EEF2700B13E9D /* libtun2socks.a in Frameworks */,
+				027388F9299EEC2000B13E9D /* NetworkExtension.framework in Frameworks */,
+				02738909299EEC4400B13E9D /* CryptoSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027388BB299EEAC500B13E9D = {
+			isa = PBXGroup;
+			children = (
+				027388C6299EEAC500B13E9D /* tun2socks-ios */,
+				027388E7299EEBD600B13E9D /* ProxyConfig */,
+				027388FA299EEC2000B13E9D /* PacketTunnel */,
+				027388F7299EEC2000B13E9D /* Frameworks */,
+				027388C5299EEAC500B13E9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		027388C5299EEAC500B13E9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				027388C4299EEAC500B13E9D /* tun2socks-ios.app */,
+				027388E6299EEBD600B13E9D /* ProxyConfig.framework */,
+				027388F6299EEC2000B13E9D /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		027388C6299EEAC500B13E9D /* tun2socks-ios */ = {
+			isa = PBXGroup;
+			children = (
+				02738917299EF0EF00B13E9D /* tun2socks-ios.entitlements */,
+				027388C7299EEAC500B13E9D /* AppDelegate.swift */,
+				027388C9299EEAC500B13E9D /* SceneDelegate.swift */,
+				02738918299EF1B600B13E9D /* TableViewController.swift */,
+				027388CD299EEAC500B13E9D /* Main.storyboard */,
+				027388D0299EEAC600B13E9D /* Assets.xcassets */,
+				027388D2299EEAC600B13E9D /* LaunchScreen.storyboard */,
+				027388D5299EEAC600B13E9D /* Info.plist */,
+				02738919299EF1B600B13E9D /* VPNManager.swift */,
+			);
+			path = "tun2socks-ios";
+			sourceTree = "<group>";
+		};
+		027388E7299EEBD600B13E9D /* ProxyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				027388E8299EEBD600B13E9D /* ProxyConfig.h */,
+				0273890A299EEDB700B13E9D /* ProxyConfig.swift */,
+			);
+			path = ProxyConfig;
+			sourceTree = "<group>";
+		};
+		027388F7299EEC2000B13E9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02738911299EEEA700B13E9D /* libtun2socks.a */,
+				027388F8299EEC2000B13E9D /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		027388FA299EEC2000B13E9D /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				027388FB299EEC2000B13E9D /* PacketTunnelProvider.swift */,
+				027388FD299EEC2000B13E9D /* Info.plist */,
+				027388FE299EEC2000B13E9D /* PacketTunnel.entitlements */,
+				02738913299EEF2700B13E9D /* libtun2socks */,
+				0273890E299EEE1700B13E9D /* TrojanProxy.swift */,
+				0273890C299EEE1700B13E9D /* Tun2socks-Bridging-Header.h */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		02738913299EEF2700B13E9D /* libtun2socks */ = {
+			isa = PBXGroup;
+			children = (
+				02738914299EEF2700B13E9D /* libtun2socks.a */,
+				02738915299EEF2700B13E9D /* tun2socks.h */,
+			);
+			path = libtun2socks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		027388E1299EEBD600B13E9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027388E9299EEBD600B13E9D /* ProxyConfig.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		027388C3299EEAC500B13E9D /* tun2socks-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027388D8299EEAC600B13E9D /* Build configuration list for PBXNativeTarget "tun2socks-ios" */;
+			buildPhases = (
+				027388C0299EEAC500B13E9D /* Sources */,
+				027388C1299EEAC500B13E9D /* Frameworks */,
+				027388C2299EEAC500B13E9D /* Resources */,
+				027388F1299EEBD600B13E9D /* Embed Frameworks */,
+				02738905299EEC2000B13E9D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				027388EB299EEBD600B13E9D /* PBXTargetDependency */,
+				02738900299EEC2000B13E9D /* PBXTargetDependency */,
+			);
+			name = "tun2socks-ios";
+			packageProductDependencies = (
+			);
+			productName = "tun2socks-ios";
+			productReference = 027388C4299EEAC500B13E9D /* tun2socks-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		027388E5299EEBD600B13E9D /* ProxyConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027388EE299EEBD600B13E9D /* Build configuration list for PBXNativeTarget "ProxyConfig" */;
+			buildPhases = (
+				027388E1299EEBD600B13E9D /* Headers */,
+				027388E2299EEBD600B13E9D /* Sources */,
+				027388E3299EEBD600B13E9D /* Frameworks */,
+				027388E4299EEBD600B13E9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProxyConfig;
+			productName = ProxyConfig;
+			productReference = 027388E6299EEBD600B13E9D /* ProxyConfig.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		027388F5299EEC2000B13E9D /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02738902299EEC2000B13E9D /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				027388F2299EEC2000B13E9D /* Sources */,
+				027388F3299EEC2000B13E9D /* Frameworks */,
+				027388F4299EEC2000B13E9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			packageProductDependencies = (
+				02738906299EEC4100B13E9D /* CocoaAsyncSocket */,
+				02738908299EEC4400B13E9D /* CryptoSwift */,
+			);
+			productName = PacketTunnel;
+			productReference = 027388F6299EEC2000B13E9D /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		027388BC299EEAC500B13E9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					027388C3299EEAC500B13E9D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					027388E5299EEBD600B13E9D = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					027388F5299EEC2000B13E9D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 027388BF299EEAC500B13E9D /* Build configuration list for PBXProject "tun2socks-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 027388BB299EEAC500B13E9D;
+			packageReferences = (
+				027388DB299EEB5600B13E9D /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+				027388DE299EEB6F00B13E9D /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 027388C5299EEAC500B13E9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				027388C3299EEAC500B13E9D /* tun2socks-ios */,
+				027388E5299EEBD600B13E9D /* ProxyConfig */,
+				027388F5299EEC2000B13E9D /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		027388C2299EEAC500B13E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027388D4299EEAC600B13E9D /* LaunchScreen.storyboard in Resources */,
+				027388D1299EEAC600B13E9D /* Assets.xcassets in Resources */,
+				027388CF299EEAC500B13E9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027388E4299EEBD600B13E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027388F4299EEC2000B13E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		027388C0299EEAC500B13E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027388C8299EEAC500B13E9D /* AppDelegate.swift in Sources */,
+				0273891B299EF1B600B13E9D /* VPNManager.swift in Sources */,
+				027388CA299EEAC500B13E9D /* SceneDelegate.swift in Sources */,
+				0273891A299EF1B600B13E9D /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027388E2299EEBD600B13E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0273890B299EEDB700B13E9D /* ProxyConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027388F2299EEC2000B13E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02738910299EEE1700B13E9D /* TrojanProxy.swift in Sources */,
+				027388FC299EEC2000B13E9D /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		027388EB299EEBD600B13E9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027388E5299EEBD600B13E9D /* ProxyConfig */;
+			targetProxy = 027388EA299EEBD600B13E9D /* PBXContainerItemProxy */;
+		};
+		02738900299EEC2000B13E9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027388F5299EEC2000B13E9D /* PacketTunnel */;
+			targetProxy = 027388FF299EEC2000B13E9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		027388CD299EEAC500B13E9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027388CE299EEAC500B13E9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		027388D2299EEAC600B13E9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				027388D3299EEAC600B13E9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		027388D6299EEAC600B13E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		027388D7299EEAC600B13E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		027388D9299EEAC600B13E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tun2socks-ios/tun2socks-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3CMNVKLG7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tun2socks-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.trojanGFW.library;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		027388DA299EEAC600B13E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tun2socks-ios/tun2socks-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3CMNVKLG7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tun2socks-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.trojanGFW.library;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		027388EF299EEBD600B13E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3CMNVKLG7K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.trojanGFW.ProxyConfig;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		027388F0299EEBD600B13E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3CMNVKLG7K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.trojanGFW.ProxyConfig;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		02738903299EEC2000B13E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3CMNVKLG7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PacketTunnel/libtun2socks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.trojanGFW.library.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PacketTunnel/Tun2socks-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02738904299EEC2000B13E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3CMNVKLG7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PacketTunnel/libtun2socks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.trojanGFW.library.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PacketTunnel/Tun2socks-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		027388BF299EEAC500B13E9D /* Build configuration list for PBXProject "tun2socks-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027388D6299EEAC600B13E9D /* Debug */,
+				027388D7299EEAC600B13E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		027388D8299EEAC600B13E9D /* Build configuration list for PBXNativeTarget "tun2socks-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027388D9299EEAC600B13E9D /* Debug */,
+				027388DA299EEAC600B13E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		027388EE299EEBD600B13E9D /* Build configuration list for PBXNativeTarget "ProxyConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027388EF299EEBD600B13E9D /* Debug */,
+				027388F0299EEBD600B13E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02738902299EEC2000B13E9D /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02738903299EEC2000B13E9D /* Debug */,
+				02738904299EEC2000B13E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		027388DB299EEB5600B13E9D /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		027388DE299EEB6F00B13E9D /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02738906299EEC4100B13E9D /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027388DB299EEB5600B13E9D /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+		02738908299EEC4400B13E9D /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027388DE299EEB6F00B13E9D /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 027388BC299EEAC500B13E9D /* Project object */;
+}
